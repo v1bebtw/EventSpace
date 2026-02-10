@@ -1,76 +1,282 @@
-/* Сброс стилей */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.главная-страница {
+  width: 1728px;
+  height: 1117px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: min;
+  align-items: min;
+  padding: 0px;
+  background-color: #93b5f7;
+  color: #93b5f7;
 }
 
-/* Основные стили */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    padding: 20px;
-    line-height: 1.5;
+.image-2 {
+  width: 1371px;
+  height: 771px;
+  position: relative;
 }
 
-/* Заголовок */
-h1 {
-    color: #2c3e50;
-    text-align: center;
-    margin: 30px 0;
-    padding: 15px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.rectangle-7 {
+  width: 807px;
+  height: 306px;
+  position: relative;
+  border-radius: 64px;
+  color: #000000;
+  opacity: 0.6000000238418579;
 }
 
-/* Параграф */
-p {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.eventspace {
+  width: 629px;
+  height: 46px;
+  position: relative;
+  font-family: 'Istok Web';
+  font-size: 64px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
 }
 
-/* Кнопка */
-button {
-    display: block;
-    margin: 20px auto;
-    padding: 12px 25px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.group-1 {
+  width: 178px;
+  height: 140px;
+  position: relative;
 }
 
-button:hover {
-    background-color: #2980b9;
+.rectangle-5 {
+  width: 178px;
+  height: 140px;
+  position: relative;
+  border-radius: 117px;
+  color: #97e1ff;
 }
 
-/* Блок событий */
-.event {
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 15px auto;
-    max-width: 600px;
-    border-left: 4px solid #3498db;
+.es {
+  width: 89px;
+  height: 84px;
+  position: relative;
+  font-family: 'Istok Web';
+  font-size: 64px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
 }
 
-/* Сообщение */
-.message {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #2ecc71;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    display: none;
+.rectangle-5 {
+  width: 208px;
+  height: 155px;
+  position: relative;
+  border-radius: 117px;
+  color: #000000;
+  opacity: 0.10000000149011612;
+}
+
+.хедер {
+  width: 687px;
+  height: 43px;
+  position: relative;
+}
+
+.events {
+  width: 94px;
+  height: 40px;
+  position: relative;
+  font-family: 'Habibi';
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.speakers {
+  width: 131px;
+  height: 40px;
+  position: relative;
+  font-family: 'Habibi';
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.schedule {
+  width: 131px;
+  height: 40px;
+  position: relative;
+  font-family: 'Habibi';
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.support {
+  width: 118px;
+  height: 40px;
+  position: relative;
+  font-family: 'Habibi';
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.stick-1 {
+  width: 8px;
+  height: 42px;
+  position: relative;
+  font-family: 'K2D';
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.stick-2 {
+  width: 8px;
+  height: 42px;
+  position: relative;
+  font-family: 'K2D';
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.stick-3 {
+  width: 8px;
+  height: 42px;
+  position: relative;
+  font-family: 'K2D';
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.бургер-кнопка {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.rectangle-1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 42px;
+  color: #f2f2f2;
+}
+
+.iconamoon:menu-burger-horizontal-bold {
+  width: 62px;
+  height: 62px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: min;
+  align-items: min;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.vector {
+  width: 46.5px;
+  height: 31px;
+  position: relative;
+}
+
+.rectangle-6 {
+  width: 1728px;
+  height: 771px;
+  position: relative;
+  border-radius: 198px;
+  color: #b9b9b9;
+  opacity: 0.20000000298023224;
+}
+
+.Namehero {
+  width: 690px;
+  height: 250px;
+  position: relative;
+  font-family: 'Habibi';
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+
+.the-future-of-eventspace-starts-here {
+  width: 506px;
+  height: 46px;
+  position: relative;
+  font-family: 'Istok Web';
+  font-size: 64px;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+}
+
+.активная-кнопка {
+  width: 280px;
+  height: 116px;
+  position: relative;
+}
+
+.group-2 {
+  width: 280px;
+  height: 116px;
+  position: relative;
+}
+
+.group-3 {
+  width: 280px;
+  height: 116px;
+  position: relative;
+}
+
+.rectangle-8 {
+  width: 280px;
+  height: 116px;
+  position: relative;
+  border-radius: 58px;
+  color: #504c4c;
+}
+
+.frame {
+  width: 48.93543243408203px;
+  height: 48.93543243408203px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: min;
+  align-items: min;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.vector {
+  width: 44.10306167602539px;
+  height: 39.285091400146484px;
+  position: relative;
+  color: #ffffff;
+}
+
+.кнопка-активная {
+  width: 172.90835571289062px;
+  height: 37.660362243652344px;
+  position: relative;
+}
+
+.join-now {
+  width: 172.90835571289062px;
+  height: 37.660362243652344px;
+  position: relative;
+  font-family: 'Habibi';
+  font-size: 36px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
 }

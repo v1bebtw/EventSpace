@@ -1,282 +1,149 @@
-.главная-страница {
-  width: 1728px;
-  height: 1117px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: min;
-  align-items: min;
-  padding: 0px;
-  background-color: #93b5f7;
-  color: #93b5f7;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.image-2 {
-  width: 1371px;
-  height: 771px;
-  position: relative;
+body {
+    font-family: 'Habibi', serif;
+    background: #93b5f7;
+    color: white;
 }
 
-.rectangle-7 {
-  width: 807px;
-  height: 306px;
-  position: relative;
-  border-radius: 64px;
-  color: #000000;
-  opacity: 0.6000000238418579;
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
 }
 
-.eventspace {
-  width: 629px;
-  height: 46px;
-  position: relative;
-  font-family: 'Istok Web';
-  font-size: 64px;
-  font-weight: 700;
-  text-align: left;
-  color: #000000;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.group-1 {
-  width: 178px;
-  height: 140px;
-  position: relative;
+.logo-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #97e1ff, #7bb0ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
 }
 
-.rectangle-5 {
-  width: 178px;
-  height: 140px;
-  position: relative;
-  border-radius: 117px;
-  color: #97e1ff;
+.logo h1 {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 48px;
+    color: black;
 }
 
-.es {
-  width: 89px;
-  height: 84px;
-  position: relative;
-  font-family: 'Istok Web';
-  font-size: 64px;
-  font-weight: 700;
-  text-align: left;
-  color: #000000;
+.nav {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
 }
 
-.rectangle-5 {
-  width: 208px;
-  height: 155px;
-  position: relative;
-  border-radius: 117px;
-  color: #000000;
-  opacity: 0.10000000149011612;
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
 }
 
-.хедер {
-  width: 687px;
-  height: 43px;
-  position: relative;
+.nav a:hover {
+    opacity: 0.7;
 }
 
-.events {
-  width: 94px;
-  height: 40px;
-  position: relative;
-  font-family: 'Habibi';
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
+/* ================= BURGER ================= */
+
+.burger {
+    width: 60px;
+    height: 60px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.speakers {
-  width: 131px;
-  height: 40px;
-  position: relative;
-  font-family: 'Habibi';
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
+.burger span {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 4px 0;
 }
 
-.schedule {
-  width: 131px;
-  height: 40px;
-  position: relative;
-  font-family: 'Habibi';
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    width: 85%;
+    margin: 50px auto;
+    border-radius: 80px;
+    overflow: hidden;
+    background: url("../images/hero.jpg") center/cover no-repeat;
+    min-height: 600px;
 }
 
-.support {
-  width: 118px;
-  height: 40px;
-  position: relative;
-  font-family: 'Habibi';
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
-.stick-1 {
-  width: 8px;
-  height: 42px;
-  position: relative;
-  font-family: 'K2D';
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
+.hero-content {
+    position: relative;
+    padding: 100px;
+    max-width: 700px;
 }
 
-.stick-2 {
-  width: 8px;
-  height: 42px;
-  position: relative;
-  font-family: 'K2D';
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
+.hero h2 {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 56px;
+    margin-bottom: 40px;
 }
 
-.stick-3 {
-  width: 8px;
-  height: 42px;
-  position: relative;
-  font-family: 'K2D';
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
+.hero p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    line-height: 1.6;
 }
 
-.бургер-кнопка {
-  width: 100px;
-  height: 100px;
-  position: relative;
+.btn {
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: none;
+    background: #504c4c;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.rectangle-1 {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  border-radius: 42px;
-  color: #f2f2f2;
+.btn:hover {
+    background: #3a3737;
+    transform: translateY(-3px);
 }
 
-.iconamoon:menu-burger-horizontal-bold {
-  width: 62px;
-  height: 62px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: min;
-  align-items: min;
-  padding: 0px;
-  background-color: #ffffff;
-  color: #ffffff;
-}
+/* ================= RESPONSIVE ================= */
 
-.vector {
-  width: 46.5px;
-  height: 31px;
-  position: relative;
-}
+@media (max-width: 1024px) {
 
-.rectangle-6 {
-  width: 1728px;
-  height: 771px;
-  position: relative;
-  border-radius: 198px;
-  color: #b9b9b9;
-  opacity: 0.20000000298023224;
-}
-
-.Namehero {
-  width: 690px;
-  height: 250px;
-  position: relative;
-  font-family: 'Habibi';
-  font-size: 40px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
-}
-
-.the-future-of-eventspace-starts-here {
-  width: 506px;
-  height: 46px;
-  position: relative;
-  font-family: 'Istok Web';
-  font-size: 64px;
-  font-weight: 700;
-  text-align: left;
-  color: #ffffff;
-}
-
-.активная-кнопка {
-  width: 280px;
-  height: 116px;
-  position: relative;
-}
-
-.group-2 {
-  width: 280px;
-  height: 116px;
-  position: relative;
-}
-
-.group-3 {
-  width: 280px;
-  height: 116px;
-  position: relative;
-}
-
-.rectangle-8 {
-  width: 280px;
-  height: 116px;
-  position: relative;
-  border-radius: 58px;
-  color: #504c4c;
-}
-
-.frame {
-  width: 48.93543243408203px;
-  height: 48.93543243408203px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: min;
-  align-items: min;
-  padding: 0px;
-  background-color: #ffffff;
-  color: #ffffff;
-}
-
-.vector {
-  width: 44.10306167602539px;
-  height: 39.285091400146484px;
-  position: relative;
-  color: #ffffff;
-}
-
-.кнопка-активная {
-  width: 172.90835571289062px;
-  height: 37.660362243652344px;
-  position: relative;
-}
-
-.join-now {
-  width: 172.90835571289062px;
-  height: 37.660362243652344px;
-  position: relative;
-  font-family: 'Habibi';
-  font-size: 36px;
-  font-weight: 400;
-  text-align: left;
-  color: #ffffff;
-}
+    .nav {
+        display: none;
+        position: absolute;
+        top: 120px;
+        right: 80px;
+        background

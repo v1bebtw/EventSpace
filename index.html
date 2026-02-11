@@ -1,15 +1,64 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EventSpace</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventSpace</title>
 
-    <body>
-        <h1>Добро пожаловать в EventSpace</h1>
-        <p>Это старотавая страница нашего веб-приложения.</p>
-        <script src="js/script.js"></script>
-    </body>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Habibi&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <div class="logo-circle">ES</div>
+            <h1>EventSpace</h1>
+        </div>
+
+        <nav class="nav" id="nav">
+            <a href="#">Events</a>
+            <span>|</span>
+            <a href="#">Speakers</a>
+            <span>|</span>
+            <a href="#">Schedule</a>
+            <span>|</span>
+            <a href="#">Support</a>
+        </nav>
+
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h2>
+                The Future of <br />
+                EventSpace <br />
+                Starts Here
+            </h2>
+
+            <p>
+                Annual conference connecting developers, startups, and industry leaders 
+                to shape tomorrow’s technology landscape through knowledge sharing 
+                and collaboration.
+            </p>
+
+            <button class="btn">
+                Join now
+                <span>➜</span>
+            </button>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
 </html>

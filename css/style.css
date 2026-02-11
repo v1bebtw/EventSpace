@@ -146,4 +146,25 @@ body {
         position: absolute;
         top: 120px;
         right: 80px;
-        background
+        background: #7bb0ff;
+        flex-direction: column;
+        padding: 20px 40px;
+        border-radius: 20px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .hero-content {
+        padding: 60px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+}

@@ -1,63 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EventSpace</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Habibi&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventSpace — Конференция будущего</title>
+    
+    <!-- Ссылки на шрифты и иконки проекта -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Habibi&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
 
-    <header class="header">
-        <div class="logo">
-            <div class="logo-circle">ES</div>
-            <h1>EventSpace</h1>
+    <a href="#main" class="skip-link">Перейти к основному содержимому</a>
+
+    <!-- Шапка с логотипом,навигацией и бургер меню -->
+    <header class="header" itemprop="header">
+        <div class="header__logo logo">
+            <div class="logo__circle">ES</div>
+            <h1 class="logo__title">EventSpace</h1>
         </div>
 
-        <nav class="nav" id="nav">
-            <a href="#">Events</a>
-            <span>|</span>
-            <a href="#">Speakers</a>
-            <span>|</span>
-            <a href="#">Schedule</a>
-            <span>|</span>
-            <a href="#">Support</a>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Events</a></li>
+                <li class="nav__item">|</li>
+                <li class="nav__item"><a href="#" class="nav__link">Speakers</a></li>
+                <li class="nav__item">|</li>
+                <li class="nav__item"><a href="#" class="nav__link">Schedule</a></li>
+                <li class="nav__item">|</li>
+                <li class="nav__item"><a href="#" class="nav__link">Support</a></li>
+            </ul>
         </nav>
 
-        <div class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <button class="header__burger-bubble" id="burger" aria-label="Открыть меню">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
 
+    <!-- Основное содержимое страницы -->
+    <main class="main" itemprop="mainContent">
+        <section class="hero" itemscope itemtype="https://schema.org/Event">
+            <div class="hero__overlay"></div>
+            
+            <div class="hero__content">
+                <h2 class="hero__title" itemprop="name">
+                    The Future of <br> EventSpace <br> Starts Here
+                </h2>
 
-    <section class="hero">
-        <div class="hero-overlay"></div>
+                <figure class="hero__figure">
+                    <div class="hero__description-wrapper">
+                        <p class="hero__description" itemprop="description">
+                            Annual conference connecting developers, startups, and industry leaders 
+                            to shape tomorrow’s technology landscape through knowledge sharing 
+                            and collaboration.
+                        </p>
+                    </div>
+                    <figcaption class="hero__caption">Global Summit 2026</figcaption>
+                </figure>
 
-        <div class="hero-content">
-            <h2>
-                The Future of <br />
-                EventSpace <br />
-                Starts Here
-            </h2>
+                <div class="hero__details">
+                    <div class="hero__date">
+                        <i class="fa-regular fa-calendar"></i>
+                        <time itemprop="startDate" datetime="2026-02-25T09:00">February 25, 2026</time>
+                    </div>
+                    <div class="hero__location" itemprop="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span itemprop="name">Minsk, Belarus</span>
+                    </div>
+                </div>
 
-            <p>
-                Annual conference connecting developers, startups, and industry leaders 
-                to shape tomorrow’s technology landscape through knowledge sharing 
-                and collaboration.
-            </p>
+                <button class="hero__btn btn" itemprop="url">
+                    Join now <span class="btn__icon">➜</span>
+                </button>
+            </div>
+        </section>
 
-            <button class="btn">
-                Join now
-                <span>➜</span>
-            </button>
+        <section class="speakers">
+            <h3 class="speakers__title">Featured Speakers</h3>
+            <div class="speakers__grid">
+                <article class="speaker-card">
+                    <img src="images/speaker2.jpg" alt="Первый спикер" class="speaker-card__img">
+                    <h4 class="speaker-card__name">Alex Johnson</h4>
+                </article>
+                <article class="speaker-card">
+                    <img src="images/speaker1.jpg" alt="Второй спикер" class="speaker-card__img">
+                    <h4 class="speaker-card__name">Sarah Connor</h4>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+<footer class="footer" itemscope itemtype="https://schema.org/Organization">
+        <div class="footer__container">
+            
+            <!-- Левая часть -->
+            <div class="footer__left">
+                <section class="footer__subscribe subscribe">
+                    <h2 class="subscribe__title">Subscribe to us:</h2>
+                    <form class="subscribe__form">
+                        <input type="email" class="subscribe__input" placeholder="Enter your email." required>
+                        <button type="submit" class="subscribe__btn">GET START</button>
+                    </form>
+                </section>
+
+                <div class="footer__contact-info">
+                    <span itemprop="name" class="footer__agency-name">EventSpace</span>
+                    
+                    <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="footer__address">
+                        <span itemprop="streetAddress">пр-т Независимости, 25</span>, 
+                        <span itemprop="addressLocality">Минск</span>
+                    </div>
+
+                    <span itemprop="telephone" class="footer__phone">+375 (25) 712-14-85</span>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Правая часть -->
+            <div class="footer__right">
+                <div class="footer__column">
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Login</a>
+                    <a href="#">Signup</a>
+                </div>
+                <div class="footer__column">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Legal Notice</a>
+                </div>
+                <div class="footer__column">
+                    <a href="#">Feedback</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Legal Notice</a>
+                </div>
+            </div>
+            
         </div>
-    </section>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

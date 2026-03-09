@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventSpace — Конференция будущего</title>
     
-    <!-- Ссылки на шрифты и иконки проекта -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Habibi&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
 
     <a href="#main" class="skip-link">Перейти к основному содержимому</a>
 
-    <!-- Шапка с логотипом,навигацией и бургер меню -->
     <header class="header" itemprop="header">
         <div class="header__logo logo">
             <div class="logo__circle">ES</div>
@@ -39,8 +37,8 @@
         </button>
     </header>
 
-    <!-- Основное содержимое страницы -->
     <main class="main" itemprop="mainContent" id="main">
+        <div class="main__container">
         <section class="hero" itemscope itemtype="https://schema.org/Event">
             <div class="hero__overlay"></div>
             
@@ -77,6 +75,29 @@
             </div>
         </section>
 
+        <aside class="sidebar">
+            <div class="sidebar__inner">
+                <h3 class="sidebar__title">Latest News</h3>
+                
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <time class="sidebar__date" datetime="2026-02-15">15 Feb</time>
+                        <p class="sidebar__text">Registration is now open for all speakers.</p>
+                    </li>
+                    <li class="sidebar__item">
+                        <time class="sidebar__date" datetime="2026-02-10">10 Feb</time>
+                        <p class="sidebar__text">Tickets are now available! Grab yours at a 20% discount.</p>
+                    </li>
+                    <li class="sidebar__item">
+                        <time class="sidebar__date" datetime="2026-02-01">01 Feb</time>
+                        <p class="sidebar__text">EventSpace moves to a new place: Convention Center Minsk.</p>
+                    </li>
+                </ul>
+
+                <a href="#" class="sidebar__link">See all updates ➜</a>
+            </div>
+        </aside>
+
         <section class="speakers">
             <h3 class="speakers__title">Featured Speakers</h3>
             <div class="speakers__grid">
@@ -90,16 +111,15 @@
                 </article>
             </div>
         </section>
+        </div>
     </main>
 
-    <!-- Подвал сайта -->
 <footer class="footer" itemscope itemtype="https://schema.org/Organization">
         <div class="footer__container">
             
-            <!-- Левая часть -->
             <div class="footer__left">
                 <section class="footer__subscribe subscribe">
-                    <h2 class="subscribe__title">Subscribe to us:</h2>
+                    <h2 class="subscribe__title">Subscribe:</h2>
                     <form class="subscribe__form">
                         <input type="email" class="subscribe__input" placeholder="Enter your email." required>
                         <button type="submit" class="subscribe__btn">GET START</button>
@@ -124,7 +144,6 @@
                 </div>
             </div>
 
-            <!-- Правая часть -->
             <div class="footer__right">
                 <div class="footer__column">
                     <a href="#">Features</a>

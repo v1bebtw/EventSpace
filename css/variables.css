@@ -1,0 +1,27 @@
+:root {
+    --bg-color: #93b5f7;
+    --white: #ffffff;
+    --black: #161616;
+    --dark-footer: #2d343f;
+    --gray-text: #b0b0b0;
+    --color-btn: #504c4c;
+    --btn-hover: #3a3737;
+
+    --font-main: 'Habibi', serif;
+    --font-header: 'Istok Web', sans-serif;
+
+    --size-hero: 58px;
+    --size-logo: 32px;
+    --size-section: 32px;
+    --size-nav: 18px;
+    --size-text: 18px;
+    --size-btn: 20px;
+    --size-footer: 14px;
+
+    --spacing-md: 20px;
+    --spacing-lg: 80px;
+
+    --breakpoint-mobile: 480px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1024px;
+}

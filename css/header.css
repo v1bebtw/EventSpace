@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px;
+    padding: var(--spacing-md) var(--spacing-lg);   
 }
 
 .logo { display: flex; align-items: center; gap: 15px; }
@@ -38,11 +38,11 @@
         display: none; 
         position: absolute;
         top: 120px;
-        right: 80px;
+        right: var(--spacing-lg);
         background: var(--white);
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        padding: var(--spacing-md);
+        border-radius: var(--spacing-md);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         z-index: 1000;
         width: 200px;
     }

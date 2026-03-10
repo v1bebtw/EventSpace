@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-.hero__overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.3); }
+.hero__overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.3); }
 .hero__content { position: relative; padding: 40px; max-width: 800px; }
 .hero__title { font-family: var(--font-header); font-size: 32px; margin-bottom: 20px; line-height: 1.1; }
 

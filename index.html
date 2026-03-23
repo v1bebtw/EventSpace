@@ -59,14 +59,39 @@
                 </figure>
 
                 <div class="hero__details">
+
                     <div class="hero__date">
                         <i class="fa-regular fa-calendar"></i>
-                        <time itemprop="startDate" datetime="2026-02-25T09:00">February 25, 2026</time>
+                        <time itemprop="startDate" datetime="2026-04-25T09:00">March 31, 2026</time>
                     </div>
+
                     <div class="hero__location" itemprop="location">
                         <i class="fa-solid fa-location-dot"></i>
                         <span itemprop="name">Minsk, Belarus</span>
                     </div>
+
+                    <div id="countdown" class="hero__timer timer">
+                        <div class="timer__item">
+                            <span id="days" class="timer__number">00</span>
+                            <p class="timer__label">Days</p>
+                        </div>
+                        <span class="timer__separator">:</span>
+                        <div class="timer__item">
+                            <span id="hours" class="timer__number">00</span>
+                            <p class="timer__label">Hours</p>
+                        </div>
+                        <span class="timer__separator">:</span>
+                        <div class="timer__item">
+                            <span id="minutes" class="timer__number">00</span>
+                            <p class="timer__label">Minutes</p>
+                        </div>
+                        <span class="timer__separator">:</span>
+                        <div class="timer__item">
+                            <span id="seconds" class="timer__number">00</span>
+                            <p class="timer__label">Seconds</p>
+                        </div>
+                    </div>
+
                 </div>
 
                 <button class="hero__btn btn" itemprop="url">
@@ -111,8 +136,42 @@
                 </article>
             </div>
         </section>
+
         </div>
+
+        <section class="calendar-section">
+            <div class="calendar__container">
+                <div id="calendar-grid" class="calendar-grid">
+                    <h4 class="calendar__month-title">March</h4> 
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <div id="modal-reg" class="modal">
+        <div class="modal__content">
+            <button id="modal-close" class="modal__close">&times;</button>
+            <h3 class="modal__title">Registration</h3>
+            <p class="modal__subtitle">Fill in the details to join EventSpace 2026</p>
+            
+            <form id="event-reg-form" class="modal__form" novalidate>
+                <div class="form-group">
+                    <input type="text" name="userName" id="user-name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="userEmail" id="user-email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <select name="ticketType" id="ticket-type">
+                        <option value="standard">Standard Ticket</option>
+                        <option value="premium">Premium Ticket</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn modal__submit">Confirm Registration ➜</button>
+            </form>
+        </div>
+    </div>
 
 <footer class="footer" itemscope itemtype="https://schema.org/Organization">
         <div class="footer__container">
@@ -166,6 +225,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
+
 </body>
 </html>

@@ -402,3 +402,42 @@
     margin-top: 5px;
     text-align: left;
 }
+
+.api-section {
+    padding: 60px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.api-section__container {
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    border-radius: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.api-controls {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.api-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px)); 
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.api-section__main-title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 50px;
+}

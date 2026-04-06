@@ -62,7 +62,7 @@
 
                     <div class="hero__date">
                         <i class="fa-regular fa-calendar"></i>
-                        <time itemprop="startDate" datetime="2026-04-25T09:00">March 31, 2026</time>
+                        <time itemprop="startDate" datetime="2026-04-25T09:00">May 31, 2026</time>
                     </div>
 
                     <div class="hero__location" itemprop="location">
@@ -142,8 +142,21 @@
         <section class="calendar-section">
             <div class="calendar__container">
                 <div id="calendar-grid" class="calendar-grid">
-                    <h4 class="calendar__month-title">March</h4> 
+                    <h4 class="calendar__month-title">April</h4> 
                 </div>
+            </div>
+        </section>
+
+        <section class="api-section">
+            <div class="api-section__container">
+                <h3 class="api-section__main-title">Upcoming Global Events</h3>
+                
+                <div class="api-controls">
+                    <button id="refresh-btn" class="btn">Sync Sources</button>
+                    <div id="loader" style="display:none; color: #000; margin-top: 10px;">Connecting to API...</div>
+                </div>
+
+                <div id="api-data-container" class="api-grid"></div>
             </div>
         </section>
 
